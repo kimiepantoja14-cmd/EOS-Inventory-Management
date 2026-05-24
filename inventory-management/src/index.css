@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Re-route global Indigo utility color tokens to Azure Blue #4863A0 color palette */
+  --color-indigo-50: #f0f3f8;
+  --color-indigo-100: #e1e7f0;
+  --color-indigo-200: #c5d0e2;
+  --color-indigo-205: #b7c4db;
+  --color-indigo-300: #a5b5d3;
+  --color-indigo-400: #748cb9;
+  --color-indigo-500: #4863A0;
+  --color-indigo-505: #5573b5;
+  --color-indigo-600: #3b5183;
+  --color-indigo-700: #2f416a;
+  --color-indigo-800: #232f4e;
+  --color-indigo-900: #171f33;
+  --color-indigo-950: #0c101b;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-pick-list, #printable-pick-list * {
+    visibility: visible;
+  }
+  #printable-pick-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

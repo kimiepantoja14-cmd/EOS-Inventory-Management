@@ -1,0 +1,6 @@
+{
+  "name": "Equiprime Inventory Portal",
+  "description": "A centralized inventory tracking system from purchase order to stocking to sales, supporting multi-warehouse management and real-time stock updates.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
